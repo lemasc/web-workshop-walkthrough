@@ -14,13 +14,11 @@ For educational purposes. Will wrote until I lazy btw.
 
 ### [00 - Getting Started with Infra42](/docs/00-getting-started-infra42.md)
 
-**Applies from: ** (all)
-
 วิธีการเข้าใช้งาน 42 infra ในครั้งแรก (Reset Password) การส่งงานด้วยระบบ GitHub
 
 ## Cellule 0 - Shell
 
-### Fundamentals
+### Resources
 
 #### [01 - Shell Introduction](/docs/01-shell-introduction.md)
 
@@ -31,7 +29,17 @@ For educational purposes. Will wrote until I lazy btw.
 **[แนะนำ]** เนื่องจากคำสั่งบน Windows และ Bash (Linux) ส่วนมากที่ไม่เหมือนกัน **99.99% บน Linux จะง่ายกว่าเสมอ** ☠️ ยิ่งเฉพาะโจทย์ข้อหลัง ๆ ยิ่งปวดหัว จึงแนะนำให้ตั้งค่า Bash บน Windows สำหรับใช้ทำโจทย์ 
 
 หมายเหตุคือถ้าใช้ Bash แล้วทั้งคนทำและคนตรวจต้องใช้ Bash เหมือนกันนะครับ พูดง่าย ๆ คือถ้าใช้ Windows เหมือนกันก็ควรลงตาม guide นี้เหมือนกันนั่นเอง :)
+### Keywords
 
+#### Shell Script
 
+เป็นไฟล์ที่สามารถเขียนโปรแกรมขนาดเล็กเพื่อรันคำสั่งต่าง ๆ ใน Terminal ได้ ฟีล Python แต่อีกภาษานึงเลย
+
+- สำหรับบน Linux (และไฟล์ที่ 42 ต้องการให้ส่ง) จะใช้นามสกุล `.sh` และเรียกไฟล์นี้ว่า **Shell Script**
+- สำหรับบน Windows จะใช้นามสกุล `.bat` และเรียกไฟล์นี้ว่า **Batch Script**
+
+ซึ่งทั้งสองภาษานี้มีความแตกต่างในการเขียนอย่างสิ้นเชิง แต่จุดประสงค์ในการทำงานเดียวกัน
+
+ในที้นี้จะไม่ได้สอนเขียน Shell Script เพราะใครเข้าเขียนเองกัน Search เอาหรือโยนเข้า Chat เลยคับ
 
 
