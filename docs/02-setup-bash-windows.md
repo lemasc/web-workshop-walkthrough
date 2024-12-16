@@ -1,18 +1,9 @@
 # 02 - (Windows Only) Setup Bash
 
 หน้านี้เป็นหน้าพิเศษสำหรับสอนติดตั้งเครื่องมือที่ใช้ในการรันคำสั่งใน Bash Shell บน Windows ซึ่งแนะนำอย่างยิ่งสำหรับทำโจทย์ข้อหลัง ๆ ในบทที่ 1 สาเหตุแบบกระชับคือ Windows มันกากคับ จบ
-
-## สำคัญ!
-
-ไม่ว่าจะใช้เครื่องมือใดก็ตาม **ไฟล์ต่าง ๆ ที่สร้างใน home directory** (หรือไฟล์ใด ๆ บนเครื่องก็ตาม) จะ **ไม่ Share ร่วมกัน** กับ Windows ดังนั้นไฟล์ต่าง ๆ ที่จำเป็นต้องสร้างใหม่ใน Terminal ของเครื่องมือนั้น ๆ คับ
-
 ## แบบ Perfect : WSL
 
-**คำอธิบายอย่างรวดเร็ว:** WSL ย่อมาจาก Windows Subsystem for Linux เป็นระบบ Linux ที่สามารถติดตั้งลงไปใน Windows ได้เลย
-
-**ข้อดี:** เสถียรมาก ค่อนข้างแนะนำ (Official จาก Microsoft) ตั้งค่าและใช้งานง่าย เผลอ ๆ ประโยชน์อาจมากกว่าแค่ทำโจทย์ใน 42 ด้วยนะ
-
-**ข้อเสีย:** กินพื้นที่ประมาณนึง (2 GB) ถ้าเน็ตจำกัดอาจไม่คุ้ม ลองติดตั้ง Cygwin ด้านล่าง
+WSL ย่อมาจาก Windows Subsystem for Linux เป็นระบบจาก Microsoft ที่ทำให้เราสามารถติดตั้ง Linux ยัดลงไปใน Windows ได้เลย ปัญหาคือกินพื้นที่ประมาณนึง (2 GB) ถ้าเน็ตจำกัดหรือมีปัญหาระหว่างการติดตั้ง มีตัวเลือกอื่นด้านล่าง
 
 ### วิธีติดตั้ง
 
@@ -32,47 +23,35 @@
 
 ### วิธีใช้งาน
 
-เปิด Windows Terminal ตามปกติ ข้าง ๆ icon + จะมีปุ่มให้กดสลับไปยัง Ubuntu ดังรูป
+เปิด Windows Terminal ตามปกติ ให้พิมพ์ `ubuntu` จะเข้าสู่ WSL ด้วย Home Directory ภายใน Linux **(ไม่ Share กับไฟล์เดิมที่มีอยู่)**
 
-![](../screenshots/Pasted%20image%2020241217000917.png)
+![](../screenshots/Pasted%20image%2020241217012135.png)
 
-Terminal จะเปลี่ยนเป็นสีแดงม่วง สามารถใช้งานได้เลย
+ในการออกสามารถพิมพ์ exit เพื่อออกได้
+ 
+ถ้าต้องการใช้โฟลเดอร์เดิมที่มีอยู่ ให้เปลี่ยนไปใช้คำสั่ง `ubuntu run` จะได้ผลลัพธ์เหมือนเดิม (path จะเปลี่ยนเล็กน้อย แต่มันคือ home directory แบบ Windows คับ)
 
-![](../screenshots/Pasted%20image%2020241217000952.png)
+![](../screenshots/Pasted%20image%2020241217012156.png)
+## แบบประหยัด: Git Bash
 
-## แบบประหยัด : Cygwin
-
-**คำอธิบายอย่างรวดเร็ว:** เป็นชุดโปรแกรมเล็ก ๆ ที่จำลองระบบพื้นฐานของ Linux มาใน Windows ให้สามารถใช้รันคำสั่งพื้นฐานต่าง ๆ ได้ (คอม Lab คณะก็ใช้ตัวนี้)
-
-**ข้อดี:** มินิมอล (?) กินเมมน้อย (160 MB) โหลดไว สบายกระเป๋า (ถ้าเน็ตหอกากใช้อันนี้ดีกว่ามาก)
-
-**ข้อเสีย:** แอบเก่าไม่โมเดิร์น ขั้นตอนเยอะนิ้ด อาจมีข้อจำกัดบ้างแต่ใช้เล่นใน 42 ได้แน่นอน
+> [!NOTE]
+> 
+> เลือกใช้ Git Bash เพราะเป็นตัวเลือกที่ Learning Curve น้อยสุด "คิดว่า" น่าจะพอทำโจทย์ใน 42 ได้คับ ทั้งนี้ถ้าเกิดปัญหาจริง ๆ แล้ว Search ไม่ออก อาจจำเป็นต้องกลับไปลง WSL นะ
 
 ### วิธีติดตั้ง
 
-1. ไปที่ https://cygwin.com/install.html โหลดตัว **setup-x86_64.exe**
-	![](../screenshots/Pasted%20image%2020241216232804.png)
-2. กด Next ตาม Default ได้ทุกหน้า
-	
-	![](../screenshots/Pasted%20image%2020241216232850.png)
-	![](../screenshots/Pasted%20image%2020241216232927.png)
-	![](../screenshots/Pasted%20image%2020241216233003.png)
-4. เมื่อถึงหน้า **Download Site** ให้ Copy URL นี้ไปใส่ `https://download.nus.edu.sg/mirror/cygwin/` แล้วกด **Add** จากนั้นกด **Next**
-	![](../screenshots/Pasted%20image%2020241216233330.png)
-5. เมื่อถึงหน้า **Select Packages** จะเห็นรายการเยอะแยะเต็มไปหมด ให้ขยาย Package เป็น All > Base ติ๊กเครื่องหมายดังรูปเป็น Install **สังเกตว่า Column New  ที่เราเลือกจะเปลี่ยนจากคำว่า Default เป็น Install** เสร็จเรียบร้อยกด Next
-	![](../screenshots/Pasted%20image%2020241216233958.png)
-6. กด Next และรอติดตั้งจนเสร็จ
-	
-	![](../screenshots/Pasted%20image%2020241216234202.png)
-	![](../screenshots/Pasted%20image%2020241216234206.png)
-8. เมื่อเสร็จสิ้นให้กด **Finish**
-	
-	![](../screenshots/Pasted%20image%2020241216234339.png)
+ทำตามขั้นตอนใน [Git for Windows Installation](../docs/00-getting-started-infra42.md) ได้เลย (อย่าลืมติ๊ก Windows Explorer Integration ถ้าลืมไปกดลงใหม่)
 
 ### วิธีใช้งาน
 
-Double Click ที่โปรแกรม Cygwin64 Terminal บนหน้าจอ จะสามารถใช้ Terminal ได้ทันที **สังเกตว่าเป็นคนละตัวกับ Windows Terminal**
+Search ชื่อโปรแกรมว่า **Git Bash** แล้วกด Open
 
-![](../screenshots/Pasted%20image%2020241216234406.png)
+![](../screenshots/Pasted%20image%2020241217012818.png)
 
-![](../screenshots/Pasted%20image%2020241216235114.png)
+Terminal จะปรากฏขึ้น เรียบร้อย
+
+![](../screenshots/Pasted%20image%2020241217012648.png)
+
+
+
+
