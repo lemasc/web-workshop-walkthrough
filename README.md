@@ -26,7 +26,7 @@ For educational purposes. Will wrote until I lazy btw.
 
 รู้จักกับ Shell ว่าคืออะไร ขั้นตอนการทำงาน โครงสร้าง File และ Directory พื้นฐาน
 
-#### [02 - (Windows Only) Setup Bash](/docs/02-setup-bash-windows)
+#### [02 - (Windows Only) Setup Bash](/docs/02-setup-bash-windows.md)
 
 **[แนะนำ]** เนื่องจากคำสั่งบน Windows และ Bash (Linux) ส่วนมากที่ไม่เหมือนกัน **99.99% บน Linux จะง่ายกว่าเสมอ** ☠️ ยิ่งเฉพาะโจทย์ข้อหลัง ๆ ยิ่งปวดหัว จึงแนะนำให้ตั้งค่า Bash บน Windows สำหรับใช้ทำโจทย์ 
 

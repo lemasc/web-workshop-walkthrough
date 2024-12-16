@@ -14,10 +14,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/02-setup-bash-windows.md"
+                "file": "README.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 02-setup-bash-windows"
+              "title": "Outline of README"
             }
           },
           {
@@ -50,7 +50,7 @@
             "group": "9487905463a69b74"
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "c7b7f387675091ce",
@@ -211,8 +211,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a7a74874ab11eda",
+  "active": "ed3469b371e688d5",
   "lastOpenFiles": [
+    "docs/02-setup-bash-windows.md",
+    "README.md",
     "screenshots/Pasted image 20241217000952.png",
     "screenshots/Pasted image 20241217000917.png",
     "screenshots/Pasted image 20241217000649.png",
@@ -223,9 +225,6 @@
     "screenshots/Pasted image 20241216234339.png",
     "screenshots/Pasted image 20241216234206.png",
     "screenshots/Pasted image 20241216234202.png",
-    "screenshots/Pasted image 20241216233958.png",
-    "docs/02-setup-bash-windows.md",
-    "README.md",
     "docs/00-getting-started-infra42.md",
     "docs/01-shell-introduction.md",
     "screenshots/Pasted image 241216172449.png.md",
