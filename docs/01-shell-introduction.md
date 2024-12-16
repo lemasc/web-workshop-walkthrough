@@ -184,6 +184,7 @@ cd ..
 ในการลบ Folder จะแตกต่างกันระหว่างบน Linux และ Windows สำหรับบน Linux ให้ใช้คำสั่ง `rm -rf` เพื่อลบ directory ถ้าใช้ rm เฉย ๆ ระบบจะไม่ให้ลบ
 
 ![Pasted image 20241216185327.png](/screenshots/Pasted%20image%2020241216185327.png)
+
 *(แสดงตัวอย่างการรัน ใช้แค่ rm จะขึ้นเตือนและ folder ไม่ถูกลบ ต้องใช้ rm -rf folder จึงจะถูกลบ*
 
 > [!DANGER]
