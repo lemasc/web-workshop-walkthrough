@@ -1,3 +1,5 @@
 {
-  "attachmentFolderPath": "screenshots"
+  "attachmentFolderPath": "screenshots",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }

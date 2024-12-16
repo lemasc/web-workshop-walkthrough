@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/01-shell-introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "01-shell-introduction"
             }
           }
         ]
@@ -165,8 +165,10 @@
   "active": "3ce6871b5a62f432",
   "lastOpenFiles": [
     "docs/00-getting-started-infra42.md",
-    "README.md",
+    "screenshots/Pasted image 20241216172449.png",
+    "screenshots/Pasted image 241216172449.png.md",
     "docs/01-shell-introduction.md",
+    "README.md",
     "screenshots/Pasted image 20241216185559.png",
     "screenshots/Pasted image 20241216185327.png",
     "screenshots/Pasted image 20241216185045.png",
@@ -176,7 +178,6 @@
     "screenshots/Pasted image 20241216182401.png",
     "screenshots/Pasted image 20241216182313.png",
     "screenshots/Pasted image 20241216182113.png",
-    "screenshots/Pasted image 20241216181616.png",
     "Untitled.canvas",
     "screenshots",
     "00-getting-started.md",
