@@ -12,7 +12,8 @@
 
 โปรแกรมในปัจจุบันที่เราใช้กันแบบมีปุ่มให้กด หรือเรียกว่า GUI (Graphical User Interface) แต่โปรแกรมที่เกิดขึ้นมาก่อนการมี GUI นั่นก็คือโปรแกรมแบบ CLI (Command Line Interface) ซึ่งเป็นโปรแกรมที่เราจะคุยผ่าน Terminal หรือ Shell (หน้าต่างดำ ๆ)
 
-![Pasted image 20241216173058.png](/screenshots/Pasted%20image%2020241216172558.png)
+![Pasted image 20241216173058.png](/screenshots/Pasted%20image%2020241216173058.png)
+
 
 ในสายงาน Developer เรามักนิยมใช้คำสั่งแบบพิมพ์เข้าไปใน Terminal หรือ Command Line มากกว่าการใช้ GUI เพราะเครื่องมือส่วนมากจะ Advanced กว่า และก็ทำมาให้พวกเรา Developer ใช้กันเอง จึงไม่จำเป็นต้องมีหน้าตา GUI ที่สวยงามแต่อย่างใด
 
