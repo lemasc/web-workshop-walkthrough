@@ -56,7 +56,7 @@
 - (Line 2) `<html>` Open Tag HTML ใช้ครอบทุกอย่างข้างใน
 	- (Line 3) `<head>` Open Tag Head ใช้ระบุ **ส่วนหัว** ของเว็บไซต์ ซึ่งบอกให้ Web Browser รู้ว่าต้องอ่านเว็บนี้ยังไง **ไม่แสดงผลใน Output**
 		- (Line 4) `<meta charset="UTF-8">` ระบุ Encoding เนื้อหาการแสดงผลในเว็บไซต์เป็น Unicode (UTF-8) เพื่อให้รองรับกับทุกภาษา
-		- (Line 5) `<title>Web Title</title>` ระบุ **ชื่อเว็บไซต์** ที่จะแสดงผลบน Tab ของ Browser 
+		- (Line 5) `<title>Web Title</title>` ระบุ **ชื่อเว็บไซต์** ที่จะแสดงผลบน Tab ของ Browser สามารถเปลี่ยนเป็นอะไรก็ได้ 
 	- (Line 6) `</head>` Close Tag Head
 	- (Line 7) `<body>` Open Tag Body ใช้ระบุ **ส่วนตัว (การแสดงผล) ของเว็บไซต์**
 		- (Line 8) `Web Body` เป็นข้อความธรรมดาหรือ Tag อื่นย่อย ๆ ที่อยากให้แสดง
