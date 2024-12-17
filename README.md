@@ -10,6 +10,7 @@ For educational purposes. Will wrote until I lazy btw.
 > [!NOTE]
 >
 > สามารถเข้าไปดูโจทย์ทั้งหมดแม้จะยังไม่ปลดล็อคได้ที่ https://projects.intra.42.fr/projects/list
+
 # Table of Contents
 
 ### [00 - Getting Started with Infra42](/docs/00-getting-started-infra42.md)
@@ -29,6 +30,7 @@ For educational purposes. Will wrote until I lazy btw.
 **[แนะนำ]** เนื่องจากคำสั่งบน Windows และ Bash (Linux) ส่วนมากที่ไม่เหมือนกัน **99.99% บน Linux จะง่ายกว่าเสมอ** ☠️ ยิ่งเฉพาะโจทย์ข้อหลัง ๆ ยิ่งปวดหัว จึงแนะนำให้ตั้งค่า Bash บน Windows สำหรับใช้ทำโจทย์ 
 
 หมายเหตุคือถ้าใช้ Bash แล้วทั้งคนทำและคนตรวจต้องใช้ Bash เหมือนกันนะครับ พูดง่าย ๆ คือถ้าใช้ Windows เหมือนกันก็ควรลงตาม guide นี้เหมือนกันนั่นเอง :)
+
 ### Keywords
 
 #### Shell Script
@@ -40,6 +42,16 @@ For educational purposes. Will wrote until I lazy btw.
 
 ซึ่งทั้งสองภาษานี้มีความแตกต่างในการเขียนอย่างสิ้นเชิง แต่จุดประสงค์ในการทำงานเดียวกัน
 
-ในที้นี้จะไม่ได้สอนเขียน Shell Script เพราะใครเข้าเขียนเองกัน Search เอาหรือโยนเข้า Chat เลยคับ
+ในที้นี้จะไม่ได้สอนเขียน Shell Script เพราะใครเค้าเขียนเองกัน Search เอาหรือโยนเข้า Chat เลยคับ
 
+## Cellule 1 - Basic Web
 
+### Resources
+
+#### [03 - HTML Basics](/docs/03-html-basics.md)
+
+รู้จักกับที่มาของเว็บไซต์ที่เราใช้กันในปัจจุบัน ภาษา HTML และทดลองเขียนคำสั่งง่าย ๆ
+
+#### [04 - CSS Basics](/docs/04-css-basics.md)
+
+รู้จักกับภาษา CSS ที่ใช้ในการตกแต่งหน้าเว็บไซต์ให้สวยงาม การทำ Responsive Flexbox และอื่น ๆ
