@@ -3,7 +3,7 @@ import ActiveLink from "./ActiveLink";
 import { NextChapter } from "./NextChapter";
 import { ScrollToTop } from "../ScrollToTop";
 
-type Doc = {
+export type Doc = {
   slug: string;
   title: string;
   description: string;

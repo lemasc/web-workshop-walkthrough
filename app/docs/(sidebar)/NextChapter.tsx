@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { EndDoc } from "../EndDoc";
-import { Doc } from "./02-html-basics/layout";
+import { Doc } from "./default-layout";
 
 export function NextChapter({ docs, series }: { docs: Doc[]; series: string }) {
   const pathname = usePathname();
