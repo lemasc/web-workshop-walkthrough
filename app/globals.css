@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-thai), Helvetica, sans-serif;
+}
+
+@layer components {
+  h1 {
+    @apply text-4xl font-bold text-orange-700;
+  }
+
+  h2 {
+    @apply text-2xl font-bold text-orange-700;
+  }
+
+  ul {
+    @apply list-outside pl-8 list-disc;
+  }
+
+  a[href] {
+    @apply underline;
+  }
+}
