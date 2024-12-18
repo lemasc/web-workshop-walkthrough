@@ -68,7 +68,12 @@ const BlockquoteWithBanner = (props: React.ComponentProps<"blockquote">) => {
     }
   }
 
-  return <blockquote></blockquote>;
+  return (
+    <blockquote
+      className="bg-zinc-200/50 rounded-lg p-4 space-y-4 text-zinc-600"
+      {...props}
+    />
+  );
 };
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -76,11 +81,25 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ...components,
     a: (props: React.ComponentProps<"a">) => {
       if (props.href && props.href.startsWith("http")) {
-        return <a {...props} target="_blank" rel="noopener noreferrer" />;
+        return (
+          <a
+            className="underline"
+            {...props}
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+        );
       }
       const { href, ...rest } = props;
-      return href ? <Link href={href} {...rest} /> : <a {...props} />;
+      return href ? (
+        <Link className="underline" href={href} {...rest} />
+      ) : (
+        <a className="underline" {...props} />
+      );
     },
     blockquote: BlockquoteWithBanner,
+    img: (props: React.ComponentProps<"img">) => {
+      return <img className="py-2 max-w-[800px]" {...props} />;
+    },
   };
 }

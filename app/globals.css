@@ -7,19 +7,46 @@ body {
 }
 
 @layer components {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mb-2;
+  }
+
   h1 {
     @apply text-4xl font-bold text-orange-700;
   }
 
   h2 {
+    @apply text-3xl font-bold text-orange-700;
+  }
+
+  h3 {
     @apply text-2xl font-bold text-orange-700;
   }
 
-  ul {
-    @apply list-outside pl-8 list-disc;
+  h4 {
+    @apply text-xl font-bold text-zinc-900;
   }
 
-  a[href] {
-    @apply underline;
+  ul,
+  ol {
+    @apply list-outside pl-8 space-y-2;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  code {
+    @apply font-mono text-[0.99rem] bg-gray-100 p-1 rounded;
   }
 }
