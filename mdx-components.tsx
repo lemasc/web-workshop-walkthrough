@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import {
   Info,
   Lightbulb,
@@ -99,8 +101,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     },
     blockquote: BlockquoteWithBanner,
     img: (props: React.ComponentProps<"img">) => {
-      // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-      return <img className="py-2 w-full h-auto max-w-[800px]" {...props} />;
+      return (
+        <img className="py-2 h-auto max-w-[calc(100%_800px)]" {...props} />
+      );
     },
   };
 }
