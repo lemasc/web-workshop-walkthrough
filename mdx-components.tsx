@@ -59,7 +59,7 @@ const BlockquoteWithBanner = (props: React.ComponentProps<"blockquote">) => {
       return (
         <blockquote className={`${cn} p-4 rounded-lg`}>
           <p className="font-bold pb-2">
-            <Icon className="inline-block w-6 h-6 mr-2" />
+            <Icon className="inline-block w-6 h-6 mr-2 -mt-1.5" />
             {banner}
           </p>
           {children.filter((_, i) => i !== firstTextIndex)}
@@ -99,7 +99,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     },
     blockquote: BlockquoteWithBanner,
     img: (props: React.ComponentProps<"img">) => {
-      return <img className="py-2 max-w-[800px]" {...props} />;
+      // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+      return <img className="py-2 w-full h-auto max-w-[800px]" {...props} />;
     },
   };
 }

@@ -34,26 +34,28 @@ export default function RootLayout({
           id="scroll"
           className="min-h-screen h-full bg-orange-400/10 overflow-auto"
         >
-          <div className="flex flex-col items-center justify-center p-20">
-            <div className="flex flex-col w-full max-w-7xl gap-4 text-lg bg-white/70 rounded-lg p-10">
+          <div className="flex flex-col items-center justify-center px-6 md:px-16 xl:px-20 pt-8 md:pt-16 xl:pt-20 pb-8">
+            <div className="flex flex-col w-full max-w-7xl gap-4 text-lg bg-white/70 rounded-lg p-8 py-10 md:p-10">
               {children}
             </div>
           </div>
+          <footer className="w-full flex flex-row flex-wrap items-center justify-center p-6 gap-x-2">
+            <span>
+              Made with ❤️ by <span className="text-orange-700">@lemasc</span>.
+            </span>
+            <span>
+              See{" "}
+              <a
+                className="text-orange-700 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/lemasc/web-workshop-walkthrough"
+              >
+                Source code on GitHub
+              </a>
+            </span>
+          </footer>
         </div>
-        <footer className="absolute bottom-4 left-0 w-full flex flex-col items-center justify-center">
-          <p>
-            Made with ❤️ by <span className="text-orange-700">@lemasc</span>.
-            See{" "}
-            <a
-              className="text-orange-700 font-medium"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/lemasc/web-workshop-walkthrough"
-            >
-              Source code on GitHub
-            </a>
-          </p>
-        </footer>
       </body>
     </html>
   );

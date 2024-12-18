@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Home />
       <h2>Resources</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {units.map((unit) => (
           <Link
             href={`/docs/${unit.path}`}

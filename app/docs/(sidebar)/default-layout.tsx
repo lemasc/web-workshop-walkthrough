@@ -19,18 +19,20 @@ export function createLayout({
   return function Layout({ children }: { children: React.ReactNode }) {
     return (
       <div className="flex flex-row">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-w-full">
           <div className="flex items-start text-base mb-2">
             <div className="bg-orange-400/10 p-4 rounded-lg border border-orange-600 space-y-1 w-full max-w-[500px]">
               <div className="text-orange-700 flex flex-col space-y-1">
-                <p>
-                  <i>
-                    You are on series: <b>{series.title}</b>
-                  </i>
-                  <Link href="/" className="ml-2 font-bold hover:underline">
+                <div className="flex flex-wrap gap-x-2">
+                  <p>
+                    <i>
+                      You are on series: <b>{series.title}</b>
+                    </i>
+                  </p>
+                  <Link href="/" className="font-bold hover:underline">
                     (Go back)
                   </Link>
-                </p>
+                </div>
                 <b className="text-lg">Chapters</b>
               </div>
               <ul className="list-disc list-inside">
