@@ -27,7 +27,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "screenshots/Pasted image 20241217012818.png"
+                "file": "public/screenshots/Pasted image 20241217012818.png"
               },
               "icon": "lucide-image",
               "title": "Pasted image 20241217012818"
@@ -201,18 +201,19 @@
   },
   "active": "95e655f8d9a949c9",
   "lastOpenFiles": [
-    "screenshots/Pasted image 20241218004530.png",
-    "screenshots/Pasted image 20241218012715.png",
-    "screenshots/Pasted image 20241218004701.png",
+    "public/screenshots/screenshots/Pasted image 20241218013427.png",
+    "public/screenshots/screenshots/Pasted image 20241218013404.png",
+    "public/screenshots/screenshots/Pasted image 20241218013251.png",
+    "public/screenshots/screenshots/Pasted image 20241218013039.png",
+    "public/screenshots/screenshots/Pasted image 20241218013010.png",
+    "public/screenshots/screenshots/Pasted image 20241218012715.png",
+    "public/screenshots/screenshots/Pasted image 20241218012434.png",
+    "public/screenshots/screenshots/Pasted image 20241218011305.png",
+    "public/screenshots/screenshots/Pasted image 20241218005538.png",
+    "public/screenshots/screenshots/Pasted image 20241218004803.png",
+    "public/screenshots/screenshots/Pasted image 20241218004731.png",
+    "public/screenshots/screenshots",
     "docs/03-html-basics.md",
-    "screenshots/Pasted image 20241218004731.png",
-    "screenshots/Pasted image 20241218004803.png",
-    "screenshots/Pasted image 20241218005538.png",
-    "screenshots/Pasted image 20241218004859.png",
-    "screenshots/Pasted image 20241218011305.png",
-    "screenshots/Pasted image 20241218010347.png",
-    "screenshots/Pasted image 20241218010405.png",
-    "screenshots/Pasted image 20241218012434.png",
     "docs/Untitled-1.html",
     "docs/hello-world.html",
     "README.md",
@@ -225,7 +226,7 @@
     "moved-docs",
     "screenshots/Pasted image 241216172449.png.md",
     "Untitled.canvas",
-    "screenshots",
+    "public/screenshots",
     "00-getting-started.md",
     "docs/00-getting-started",
     "docs"

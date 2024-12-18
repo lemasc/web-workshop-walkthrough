@@ -3,9 +3,9 @@
 ## Reset Password for Login to Infra42
 
 1. ไปที่ [https://signin.intra.42.fr/users/password/new](https://signin.intra.42.fr/users/password/new) ป้อน Infra ID ที่ได้รับ และกดปุ่ม **Send me reset password instructions**
-	![Pasted image 20241216172449.png](/screenshots/Pasted%20image%2020241216172449.png)
+	![Pasted image 20241216172449.png](../public/screenshots/Pasted%20image%2020241216172449.png)
 2. จะได้รับอีเมลจาก 42 ให้กดลิงค์เพื่อตั้งรหัสผ่านใหม่ ให้กดที่ **Change my password**
-	![Pasted image 20241216172558.png](/screenshots/Pasted%20image%2020241216172558.png)
+	![Pasted image 20241216172558.png](../public/screenshots/Pasted%20image%2020241216172558.png)
 3. ตั้งรหัสผ่านใหม่ให้เรียบร้อย
 4. เมื่อเข้าสู่ระบบในครั้งแรกให้กดยอมรับเงื่อนไขทั้ง 4 หน้า เป็นการเสร็จสิ้น
 
@@ -32,19 +32,19 @@ Git ใช้บน VS Code ธรรมดาก็ได้ ทำไมจะ
 
 1. ไปที่ https://git-scm.com/downloads/win เลือก Download เป็น **64 bit**
 	
-	![](../screenshots/Pasted%20image%2020241217004342.png)
+	![](../public/screenshots/Pasted%20image%2020241217004342.png)
 2. สามารถกด Next ตาม Default ได้เลย จนถึงหน้า **Select Components** ให้ติ๊กเลือก **Windows Explorer integration** ด้วย แล้วกด Next 	
-	![](../screenshots/Pasted%20image%2020241217010849.png)
+	![](../public/screenshots/Pasted%20image%2020241217010849.png)
 3. สามารถกด Next ต่อได้เรื่อย ๆ จนถึงหน้า **Adjust name** ให้เลือก **Override** และกด **Next**
 	
-	![](../screenshots/Pasted%20image%2020241217004707.png)
+	![](../public/screenshots/Pasted%20image%2020241217004707.png)
 
 4. กด Next ต่อได้เรื่อย ๆ จนถึงหน้า **Line ending conventions** ให้แน่ใจว่าได้เลือก **Checkout Windows style** เพื่อป้องกันปัญหา เสร็จแล้วกด Next 
 	
-	![](../screenshots/Pasted%20image%2020241217004827.png)
+	![](../public/screenshots/Pasted%20image%2020241217004827.png)
 5. กด Next ได้เรื่อย ๆ จนถึงปุ่ม Install เลย เมื่อเสร็จสิ้นให้กด **Finish**
 	
-	![](../screenshots/Pasted%20image%2020241217004931.png)
+	![](../public/screenshots/Pasted%20image%2020241217004931.png)
 
 #### Enable in VS Code
 
@@ -52,19 +52,19 @@ Git ใช้บน VS Code ธรรมดาก็ได้ ทำไมจะ
 
 ที่แท็บ Source Control (แท็บที่ 3) เลือกปุ่ม **Clone Repository** สำหรับครั้งแรกให้เข้าสู่ระบบด้วย GitHub ก่อนโดยกดที่ **Clone from GitHub**
 
-![](../screenshots/Pasted%20image%2020241217005520.png)
+![](../public/screenshots/Pasted%20image%2020241217005520.png)
 
 VS Code จะขึ้นหน้าต่างสำหรับ Login ให้กด Allow และ Login ด้วย GitHub ตามปกติได้เลย
-![](../screenshots/Pasted%20image%2020241217005536.png)
+![](../public/screenshots/Pasted%20image%2020241217005536.png)
 
 เมื่อ Login เรียบร้อยแล้ว ให้คัดลอก GitHub URL Repository โดยไปที่ปุ่ม **Code** สีเขียว ๆ เลือกแท็บ HTTPS และกด Copy มาแปะในช่องของ VS Code
 
-![](../screenshots/Pasted%20image%2020241217005822.png)
+![](../public/screenshots/Pasted%20image%2020241217005822.png)
 
-![](../screenshots/Pasted%20image%2020241217005707.png)
+![](../public/screenshots/Pasted%20image%2020241217005707.png)
 
 จะขึ้นให้เลือก Folder ปลายทางที่จะ Download ลงไป สามารถเลือก Folder ใดก็ได้ตามเหมาะสม เนื่องจากค่าเริ่มต้นจะเป็น **home directory** อยู่แล้ว ดังนั้นเราไม่เปลี่ยนอะไรเลยก็ไม่เสียหาย
 
 เมื่อเสร็จแล้วกด Open ได้เลย เป็นการเสร็จสิ้น
 
-![](../screenshots/Pasted%20image%2020241217010002.png)
+![](../public/screenshots/Pasted%20image%2020241217010002.png)
