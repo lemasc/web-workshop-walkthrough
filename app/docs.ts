@@ -1,30 +1,21 @@
-import { readdirSync } from "node:fs";
-import path from "node:path";
-
-export const docs = readdirSync(path.join(process.cwd(), "app", "docs"), {
-  withFileTypes: true,
-  recursive: true,
-})
-  .filter((v) => v.isDirectory() && !v.name.includes("sidebar"))
-  .map(({ name: fileName }) => {
-    const index = parseInt(fileName.slice(0, 2));
-    return {
-      index,
-      slug: fileName,
-      type: "doc",
-      fileName,
-    } as const;
-  });
-
 export const units = [
   {
     name: "Getting Started",
-    description: "ตั้งค่ารหัสผ่านบน Infra42 การ Setup Git, VS Code และอื่น ๆ",
-    children: [docs[0]],
+    description: "ตั้งค่ารหัสผ่านบน Intra 42 การ Setup Git, VS Code และอื่น ๆ",
+    path: "00-getting-started-intra42",
+    type: "document",
   },
   {
-    name: "Basic Shell",
+    name: "Shell (Introduction)",
     description: `รู้จักกับ Shell ว่าคืออะไร ขั้นตอนการทำงาน โครงสร้าง File และ Directory พื้นฐาน`,
-    children: [docs[1]],
+    path: "01-shell-introduction",
+    type: "document",
+  },
+  {
+    name: "Introduction to HTML",
+    description:
+      "รู้จักกับที่มาของเว็บไซต์ที่เราใช้กันในปัจจุบัน ภาษา HTML และทดลองเขียนคำสั่งง่าย ๆ",
+    path: "02-html-basics",
+    type: "series",
   },
 ] as const;

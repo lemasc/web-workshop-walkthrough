@@ -30,7 +30,7 @@ export function ScrollToTop() {
       className="data-[top=true]:opacity-0 transition-opacity fixed right-10 bottom-10"
     >
       <button
-        title="ไปยังด้านบนสุด"
+        title="Go to top"
         onClick={() => {
           getScrollElement()?.scrollTo({ top: 0, behavior: "smooth" });
         }}
