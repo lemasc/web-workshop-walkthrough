@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Chakra_Petch } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import bkrnd from "./bkgrnd.jpg";
 
 const chakra_petch = Chakra_Petch({
   variable: "--font-thai",
@@ -19,10 +21,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${chakra_petch.variable} bg-[#f0eee5]`}>
-        <div className="flex flex-col min-h-screen h-full items-center justify-center p-20">
-          <div className="flex flex-col w-full max-w-7xl gap-4 text-lg bg-white/60 rounded-lg p-10">
-            {children}
+      <body className={`${chakra_petch.variable} h-screen overflow-hidden`}>
+        <Image
+          src={bkrnd}
+          fill
+          className="object-cover opacity-40 z-[-1]"
+          quality={100}
+          alt="background"
+          draggable={false}
+        />
+        <div
+          id="scroll"
+          className="min-h-screen h-full bg-orange-400/10 overflow-auto"
+        >
+          <div className="flex flex-col items-center justify-center p-20">
+            <div className="flex flex-col w-full max-w-7xl gap-4 text-lg bg-white/70 rounded-lg p-10">
+              {children}
+            </div>
           </div>
         </div>
       </body>

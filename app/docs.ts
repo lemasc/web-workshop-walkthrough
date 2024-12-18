@@ -16,8 +16,6 @@ export const docs = readdirSync(path.join(process.cwd(), "app", "docs"), {
     } as const;
   });
 
-console.log(docs);
-
 export const units = [
   {
     name: "Getting Started",
