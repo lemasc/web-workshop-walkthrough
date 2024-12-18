@@ -10,6 +10,8 @@ import {
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
 import React, { isValidElement } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 type Banner = "NOTE" | "TIP" | "IMPORTANT" | "WARNING" | "CAUTION";
 
@@ -104,6 +106,25 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       return (
         <img className="py-2 h-auto max-w-[calc(100%_800px)]" {...props} />
       );
+    },
+    code: (props: React.ComponentPropsWithoutRef<"code">) => {
+      if (
+        props.className &&
+        props.className.startsWith("language-") &&
+        typeof props.children === "string"
+      ) {
+        const language = props.className.replace("language-", "");
+        return (
+          // @ts-expect-error Types
+          <SyntaxHighlighter
+            language={language}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            style={atomOneDark as any}
+            {...props}
+          />
+        );
+      }
+      return <code data-withstyle="true" {...props} />;
     },
   };
 }
