@@ -15,7 +15,7 @@ const config = new StaticConfigLoader({
 const validator = new HtmlValidate(config);
 
 export default function CodeEditor({ files }: { files: SourceFile[] }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
   const [editorValue, setEditorValue] = useState(files);
 
   const setValue = (value: string | undefined) => {
