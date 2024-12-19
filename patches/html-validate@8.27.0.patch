@@ -1,0 +1,148 @@
+diff --git a/dist/cjs/browser.js b/dist/cjs/browser.js
+index 442c0a6b96df636aa7040544ad1ab25164beba09..ce6c829a0633d4f32f6e6d2bf9daa9d82799ce16 100644
+--- a/dist/cjs/browser.js
++++ b/dist/cjs/browser.js
+@@ -7,7 +7,7 @@ require('ajv');
+ require('./elements.js');
+ require('@sidvind/better-ajv-errors');
+ require('./utils/natural-join.js');
+-require('node:fs');
++// require('node:fs');
+ require('kleur');
+ require('@html-validate/stylish');
+ require('semver');
+diff --git a/dist/cjs/core.js b/dist/cjs/core.js
+index efcc026a7c42c01dcbaf0921cb615bf59ee9370d..3aadef9dcca238391bb6043f93a98d5ef3be6bb6 100644
+--- a/dist/cjs/core.js
++++ b/dist/cjs/core.js
+@@ -4,7 +4,7 @@ var Ajv = require('ajv');
+ var elements = require('./elements.js');
+ var betterAjvErrors = require('@sidvind/better-ajv-errors');
+ var utils_naturalJoin = require('./utils/natural-join.js');
+-var fs = require('node:fs');
++// var fs = require('node:fs');
+ var kleur = require('kleur');
+ var stylish$1 = require('@html-validate/stylish');
+ var semver = require('semver');
+diff --git a/dist/cjs/html-validate.js b/dist/cjs/html-validate.js
+index 9dabc6f91f06be7972f7677de9cc4ee060088547..7467367e5152f8e51e295b157032d79ea4295c4e 100644
+--- a/dist/cjs/html-validate.js
++++ b/dist/cjs/html-validate.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+ var fs = require('fs');
+-var path = require('node:path');
++// var path = require('node:path');
+ var kleur = require('kleur');
+ var minimist = require('minimist');
+ var core = require('./core.js');
+@@ -11,7 +11,7 @@ require('./elements.js');
+ require('./meta-helper.js');
+ require('./utils/natural-join.js');
+ require('@sidvind/better-ajv-errors');
+-require('node:fs');
++// require('node:fs');
+ require('@html-validate/stylish');
+ require('semver');
+ require('./core-nodejs.js');
+diff --git a/dist/es/browser.js b/dist/es/browser.js
+index 05e3350ef58752bb604453c82248beb6f3866678..a31b9a9d678a3126b8f99e9e2e129fa0811bc25b 100644
+--- a/dist/es/browser.js
++++ b/dist/es/browser.js
+@@ -5,7 +5,7 @@ import 'ajv';
+ import './elements.js';
+ import '@sidvind/better-ajv-errors';
+ import './utils/natural-join.js';
+-import 'node:fs';
++// import 'node:fs';
+ import 'kleur';
+ import '@html-validate/stylish';
+ import 'semver';
+diff --git a/dist/es/core.js b/dist/es/core.js
+index 0af17832d0356eca46677c064a2356213849f412..9cb7bf50a523e1f4bdc250f2ba8ad11c9f77a5f2 100644
+--- a/dist/es/core.js
++++ b/dist/es/core.js
+@@ -2,7 +2,7 @@ import Ajv from 'ajv';
+ import { e as entities$1, h as html5, b as bundledElements } from './elements.js';
+ import betterAjvErrors from '@sidvind/better-ajv-errors';
+ import { n as naturalJoin } from './utils/natural-join.js';
+-import fs from 'node:fs';
++// import fs from 'node:fs';
+ import kleur from 'kleur';
+ import { stylish as stylish$1 } from '@html-validate/stylish';
+ import semver from 'semver';
+@@ -10936,18 +10936,19 @@ class ResolvedConfig {
+    * @returns A list of transformed sources ready for validation.
+    */
+   transformFilename(resolvers, filename) {
+-    const stdin = 0;
+-    const src = filename !== "/dev/stdin" ? filename : stdin;
+-    const data = fs.readFileSync(src, { encoding: "utf8" });
+-    const source = {
+-      data,
+-      filename,
+-      line: 1,
+-      column: 1,
+-      offset: 0,
+-      originalData: data
+-    };
+-    return this.transformSource(resolvers, source);
++    throw new Error("Unimplemented");
++    // const stdin = 0;
++    // const src = filename !== "/dev/stdin" ? filename : stdin;
++    // const data = fs.readFileSync(src, { encoding: "utf8" });
++    // const source = {
++    //   data,
++    //   filename,
++    //   line: 1,
++    //   column: 1,
++    //   offset: 0,
++    //   originalData: data
++    // };
++    // return this.transformSource(resolvers, source);
+   }
+   /**
+    * Returns true if a transformer matches given filename.
+diff --git a/dist/es/html-validate.js b/dist/es/html-validate.js
+index a48efb2bce2d4e5cc2f523b1d27805a6dc71be23..a2fc3f96634520f836d5d61877c5261173d80c16 100644
+--- a/dist/es/html-validate.js
++++ b/dist/es/html-validate.js
+@@ -1,5 +1,5 @@
+ import fs from 'fs';
+-import path from 'node:path';
++// import path from 'node:path';
+ import kleur from 'kleur';
+ import minimist from 'minimist';
+ import { L as name, v as version, o as SchemaValidationError, U as UserError, O as bugs } from './core.js';
+@@ -9,11 +9,11 @@ import './elements.js';
+ import './meta-helper.js';
+ import './utils/natural-join.js';
+ import '@sidvind/better-ajv-errors';
+-import 'node:fs';
++// import 'node:fs';
+ import '@html-validate/stylish';
+ import 'semver';
+ import './core-nodejs.js';
+-import 'node:module';
++// import 'node:module';
+ import 'glob';
+ import 'prompts';
+ 
+diff --git a/dist/es/index.js b/dist/es/index.js
+index 3f484278338faed60941c99b44e4e6967df30b3a..a397c80e0648f62f451bda2c3df139145c0a490a 100644
+--- a/dist/es/index.js
++++ b/dist/es/index.js
+@@ -2,9 +2,9 @@ export { F as FileSystemConfigLoader, c as cjsResolver, a as compatibilityCheck,
+ export { A as Attribute, C as Config, a as ConfigError, b as ConfigLoader, D as DOMNode, h as DOMTokenList, j as DOMTree, k as DynamicValue, I as EventHandler, l as HtmlElement, H as HtmlValidate, M as MetaCopyableProperty, q as MetaTable, n as NestedError, N as NodeClosed, m as NodeType, P as Parser, B as Reporter, R as ResolvedConfig, t as Rule, o as SchemaValidationError, S as Severity, f as StaticConfigLoader, w as TextClassification, r as TextContent, T as TextNode, U as UserError, V as Validator, W as WrappedError, u as ariaNaming, x as classifyNodeText, p as configPresets, c as defineConfig, E as definePlugin, g as formatterFactory, y as keywordPatternMatcher, F as ruleExists, z as sliceLocation, s as staticResolver, v as version, G as walk } from './core.js';
+ export { C as CLI } from './cli.js';
+ export { d as defineMetadata, m as metadataHelper } from './meta-helper.js';
+-import 'node:fs';
+-import 'node:path';
+-import 'node:module';
++// import 'node:fs';
++// import 'node:path';
++// import 'node:module';
+ import 'kleur';
+ import 'ajv';
+ import './elements.js';
