@@ -1,0 +1,61 @@
+# 00 : The very basic CSS
+
+ณ ตอนนี้เราคงมีความเข้าใจพื้นฐานในภาษา HTML แล้ว ในหัวข้อนี้เราจะมาดูกันว่าเราสามารถใช้ CSS
+ในการออกแบบตกแต่งเว็บไซต์ยังไงได้บ้าง
+
+## Using style attribute
+
+วิธีการที่ง่ายที่สุด (แต่ลวกไปนิด) ในการตกแต่ง เช่น ใส่สี คือการใช้ `style` attribute ลงใน tag เช่นตัวอย่างด้านล่างนี้
+
+<RenderSourceEditor id="01-style-attribute" />
+
+จากตัวอย่างนี้ จะเห็นได้ว่าเรากำหนดสีของตัวอักษรใน tag โดยใช้ property `color`
+และกำหนดพื้นหลังของ tag โดยใช้ property `background-color` 
+
+เราสามารถใส่หลาย property ใน style ได้ โดยแต่ละ property ต้องมีเครื่องหมาย `;` คั่นเสมอ
+
+## HTML id and class
+
+การใส่ใน property ตรง ๆ อาจดูไม่เป็นระเบียบเรียบร้อย เราลองจัดระเบียบให้ดีขึ้นดีกว่า
+
+อย่างแรก เราต้องระบุว่าเราจะใช้ CSS ใน tag ไหน โดยการใส่ `id` หรือ `class` ใน tag นั้น
+ข้อแตกต่างคือ **id** สามารถใช้ได้เพียงครั้งเดียวในหน้าเว็บ แต่ **class** สามารถใช้ได้กี่ครั้งก็ได้
+ลองดูตัวอย่างด้านล่างนี้เทียบกับอันแรก จะเห็นว่าเราย้าย CSS ไปไว้ใน tag `<style>` แทน
+
+<RenderSourceEditor id="02-id-class" />
+
+> [!NOTE]
+>
+> style tag เป็นแค่การบอก Browser ว่าจะตกแต่งยังไง ไม่ถือเป็น output จึง **ต้องใส่ใน tag head** ไม่ใช่ body
+
+ในการเขียน CSS แบบฉบับเต็ม ๆ จะต้องมี **selector** ซึ่งใช้ระบุว่าต้องการใส่ style บน element ใด
+ซึ่ง selector แบบที่ระบุในตัวอย่างก็เช่น id (ใช้เครื่องหมาย `#` นำหน้า) หรือ class (ใช้เครื่องหมาย `.` นำหน้า)
+ส่วน property ที่เหลือเราใส่ตามปกติ ปิดแต่ละบรรทัดด้วย semicolon `;`
+
+```css
+selector {
+    property: value;
+    another-property: value;
+}
+
+/* select by id */
+#id {
+    property: value;
+}
+
+/* select by class */
+.class {
+    property: value;
+}
+```
+
+## CSS Properties
+
+CSS properties ก็มีเยอะมาก ๆ เช่นเดียวกับ HTML tags เรามี property ที่แนะนำให้รู้ไว้อยู่หลายตัว เช่น
+
+- สี: `color`, `background-color`
+- ตำแหน่งข้อความ: `text-align`
+- ขนาด: `width`, `height`
+- ระยะห่าง: `margin`, `padding` (ค่อนข้างมีประโยชน์ แนะนำให้อ่าน [มีบทความภาษาไทย](https://iamgique.medium.com/ความแตกต่างของ-margin-และ-padding-ใน-css-50cb254c6ccc))
+
+แต่แน่นอน ถ้าเราไม่อยากจำหมด Search เอาได้เลยไม่ต้องซีเรียส แต่เราคงเข้าใจ Code มากขึ้นแล้วนะ

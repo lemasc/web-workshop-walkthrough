@@ -1,6 +1,6 @@
 import { readdir, readFile } from "fs/promises";
 
-export const readSources = async (folder: string) => {
+export const readSourceFolder = async (folder: string) => {
   const dir = await readdir(folder, { withFileTypes: true });
   return Promise.all(
     dir
@@ -17,4 +17,14 @@ export const readSources = async (folder: string) => {
   );
 };
 
-export type SourceFile = Awaited<ReturnType<typeof readSources>>[number];
+export type SourceFile = Awaited<ReturnType<typeof readSourceFolder>>[number];
+
+export const readSources = async (sourceFolder: string) => {
+  const reads = await readdir(sourceFolder, { withFileTypes: true });
+  const subfolders = reads.filter((file) => file.isDirectory());
+  const result: Record<string, SourceFile[]> = {}
+  for (const folder of subfolders) {
+    result[folder.name] = await readSourceFolder(sourceFolder + "/" + folder.name);
+  }
+  return result;
+}

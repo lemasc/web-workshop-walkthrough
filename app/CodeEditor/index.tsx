@@ -14,7 +14,7 @@ const config = new StaticConfigLoader({
 });
 const validator = new HtmlValidate(config);
 
-export default function CodeEditor({ files }: { files: SourceFile[] }) {
+export default function CodeEditor({ id, files }: { id: string; files: SourceFile[] }) {
   const [currentIndex] = useState(0);
   const [editorValue, setEditorValue] = useState(files);
 
@@ -49,17 +49,17 @@ export default function CodeEditor({ files }: { files: SourceFile[] }) {
       <div className="flex flex-col h-[50vh]">
         <div>Code</div>
         <Editor
-          path={currentFile.name}
+          path={`${id}/${currentFile.name}`}
           defaultLanguage={currentFile.language}
           defaultValue={currentFile.value}
           onChange={setValue}
         />
       </div>
-      <div>
+      <div className="h-full flex flex-col">
         <div>Preview</div>
         <iframe
           srcDoc={currentFile.value}
-          className="w-full h-full"
+          className="w-full flex-grow"
           title="Preview"
         ></iframe>
       </div>

@@ -18,4 +18,10 @@ export const units = [
     path: "02-html-basics",
     type: "series",
   },
+  {
+    name: "CSS Fundamentals",
+    description: "เริ่มต้นออกแบบเว็บไซต์ให้สวยงามยิ่งขึ้นบนทุกอุปกรณ์ด้วย CSS Grid และ Flexbox",
+    path: "03-css-fundamentals",
+    type: "series"
+  }
 ] as const;

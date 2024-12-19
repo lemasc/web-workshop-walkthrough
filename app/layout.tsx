@@ -35,7 +35,7 @@ export default function RootLayout({
           className="min-h-screen h-full bg-orange-400/10 overflow-auto"
         >
           <div className="flex flex-col items-center justify-center px-6 md:px-16 xl:px-20 pt-8 md:pt-16 xl:pt-20 pb-8">
-            <div className="flex flex-col w-full max-w-7xl gap-4 text-lg bg-white/70 rounded-lg p-8 py-10 md:p-10">
+            <div className="flex flex-col w-full max-w-7xl gap-4 bg-white/70 rounded-lg p-8 py-10 md:p-10">
               {children}
             </div>
           </div>
