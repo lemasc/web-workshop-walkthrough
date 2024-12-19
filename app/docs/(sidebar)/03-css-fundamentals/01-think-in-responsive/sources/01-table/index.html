@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <style>
+        table {
+            /* กำหนดความกว้างเต็มพื้นที่ (100%) */
+            width: 100%;
+        }
+        .navbar {
+            /** กำหนดพื้นหลัง */
+            background-color: yellow;
+            /* กำหนดให้แสดงข้อความกึ่งกลาง (center) */
+            text-align: center;
+            /** กำหนดระยะห่างจากขอบเข้ามาด้านใน 10px */
+            padding: 10px;
+        }
+        /** ตั้งค่าของทุก Cell */
+        .sidebar, .content {
+            text-align: center;
+            /* กำหนดความสูงเป็น 100px */
+            height: 100px;
+            /* กำหนดน้ำหนักให้เป็นตัวหนา (bold) */
+            font-weight: bold;
+        }
+        .sidebar {
+            /** สีของ Cell ที่ 1 */
+            background-color: #c2d6a1;
+            /** กำหนดความกว้าง Sidebar (ให้น้อยกว่า content) */
+            width: 150px;
+        }
+        .content {
+            /** สีของ Cell ที่ 2 */
+            background-color: #f4b1a3;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <!-- colspan ใช้ระบุความกว้างของ column ในทีนี้ให้กว้างเท่า 2 column -->
+            <td class="navbar" colspan="2">Navbar</td>
+        </tr>
+        <tr>
+            <td class="sidebar">Sidebar</td>
+            <td class="content">Content</td>
+        </tr>
+    </table>
+</body>
+</html>

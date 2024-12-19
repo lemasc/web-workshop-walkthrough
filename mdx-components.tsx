@@ -104,7 +104,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     blockquote: BlockquoteWithBanner,
     img: (props: React.ComponentProps<"img">) => {
       return (
-        <img className="py-2 h-auto max-w-[calc(100%_800px)]" {...props} />
+        <img className="py-2 h-auto max-w-[min(100%,800px)]" {...props} />
       );
     },
     code: (props: React.ComponentPropsWithoutRef<"code">) => {
